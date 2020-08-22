@@ -21,9 +21,7 @@ Using Images and kubernetes the installation became just a few commands
 
 ### installation
 
-1. Go to project/starter/udaqgram-deployment/k8s: run kubectl apply -f backend-feed-deployment.yaml -f backend-feed-service.yaml -f backend-user-deployment.yaml -f backend-user-service.yaml -f reverseproxy-deployment.yaml -f reverseproxy-service.yaml -f aws-secret.yaml -f env-configmap.yaml -f env-secret.yaml -f frontend-deployment.yaml -f frontend-service.yaml
-
-
+1. Go to udaqgram-deployment/k8s: run kubectl apply -f backend-feed-deployment.yaml -f backend-feed-service.yaml -f backend-user-deployment.yaml -f backend-user-service.yaml -f reverseproxy-deployment.yaml -f reverseproxy-service.yaml -f aws-secret.yaml -f env-configmap.yaml -f env-secret.yaml -f frontend-deployment.yaml -f frontend-service.yaml
 
 And you are done
 
@@ -32,5 +30,3 @@ If you want to test it locally you can run
     kubectl port-forward service/front end 8100:8100
 
 Then in your browser run localhost:8100
-
-### Note: for installation all you need is the k8s folder you don't need any other file from the project
